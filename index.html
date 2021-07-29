@@ -30,9 +30,9 @@
   </head>
   <body>
     <!-- header -->
-    <header>
+    <header class="header-color">
       <!-- nav -->
-      <nav class="navbar navbar-expand-md navbar-light">
+      <nav class="navbar navbar-expand-md navbar-light header-color fixed-top">
         <div class="container">
           <button
             class="navbar-toggler"
@@ -51,13 +51,13 @@
                 <a class="nav-link text-light" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item mx-3">
-                <a class="nav-link text-light" aria-current="page" href="#">Shop</a>
+                <a class="nav-link text-light" aria-current="page" href="#shop">Shop</a>
               </li>
               <li class="nav-item mx-3">
                 <a class="nav-link text-light" aria-current="page" href="#">News</a>
               </li>
               <li class="nav-item mx-3">
-                <a class="nav-link text-light" aria-current="page" href="#">Contact</a>
+                <a class="nav-link text-light" aria-current="page" href="#contact">Contact</a>
               </li>
             </ul>
             <form class="d-flex">
@@ -136,7 +136,7 @@
 
     <main>
       <!-- fetured section -->
-      <section class="container pt-4">
+      <section class="container pt-4" id="shop">
         <div class="text-center">
           <h2 class="title-color fs-3 fw-bold">Fetured Bikes 2021</h2>
           <p class="text-orange fetured-p position-relative">Best bike collection</p>
@@ -145,10 +145,10 @@
           <div class="col-lg-3 col-12">
             <img class="img-fluid image-filter" src="images/feature-bike.jpg" alt="" />
           </div>
-          <div class="col-lg-3 col-12">
+          <div class="col-lg-3 col-12 mt-5 mt-lg-0">
             <img class="img-fluid" src="images/feature-bike.jpg" alt="" />
           </div>
-          <div class="col-lg-3 col-12">
+          <div class="col-lg-3 col-12 mt-5 mt-lg-0">
             <img class="img-fluid image-filter" src="images/feature-bike.jpg" alt="" />
           </div>
         </div>
@@ -160,13 +160,13 @@
           <span class="title-color">Happy</span>
           <span class="text-orange"> Clients says</span>
         </h2>
-        <div class="row row-cols-1 row-cols-md-3 g-4 mt-5">
+        <div class="row row-cols-1 row-cols-lg-3 g-4 mt-5">
           <!-- single item -->
           <div class="col">
             <div class="card">
               <!-- card image -->
-              <div class="text-center my-5">
-                <img src="images/user-1.png" class="img-fluid w-50" alt="..." />
+              <div class="my-5 text-center">
+                <img src="images/pu1.jpg" class="w-50 rounded-circle" alt="..." />
               </div>
 
               <!-- card-body -->
@@ -196,7 +196,7 @@
             <div class="card">
               <!-- card image -->
               <div class="text-center my-5">
-                <img src="images/user-2.png" class="img-fluid w-50" alt="..." />
+                <img src="images/pu2.jpg" class="w-50 rounded-circle" alt="..." />
               </div>
 
               <!-- card-body -->
@@ -214,9 +214,9 @@
                 </div>
               </div>
               <div class="text-center">
-                <a class="text-primary text-decoration-none" href="">Regina Miles</a>
+                <a class="text-primary text-decoration-none" href="">Seen wileams</a>
 
-                <p class="py-3">Banker</p>
+                <p class="py-3">Engineer</p>
               </div>
             </div>
           </div>
@@ -226,7 +226,7 @@
             <div class="card">
               <!-- card image -->
               <div class="text-center my-5">
-                <img src="images/user-1.png" class="img-fluid w-50 rounded-circle" alt="..." />
+                <img src="images/pu3.jpg" class="w-50 rounded-circle" alt="..." />
               </div>
 
               <!-- card-body -->
@@ -244,7 +244,8 @@
                 </div>
               </div>
               <div class="text-center">
-                <a class="text-primary text-decoration-none" href="">Regina Miles</a>
+                <a class="text-primary text-decoration-none" href="">Peter von</a>
+
                 <p class="py-3">Banker</p>
               </div>
             </div>
@@ -266,7 +267,7 @@
           </div>
 
           <!-- faq -->
-          <div class="col-lg-6 col-12">
+          <div class="col-lg-6 col-12 mt-5 mt-lg-0">
             <div class="">
               <div class="accordion" id="accordionFlushExample">
                 <!-- single item -->
@@ -386,7 +387,132 @@
           </div>
         </div>
       </section>
+
+      <!-- brands section -->
+      <section class="container mt-5">
+        <h2 class="fs-3 fw-bold text-center">
+          <span class="title-color">Choose Bikes By </span>
+          <span class="text-orange"> Brands</span>
+        </h2>
+        <div class="row row-cols-1 row-cols-lg-4 g-4 mt-5">
+          <!-- single-item -->
+          <div class="col">
+            <div class="card shadow-lg">
+              <div>
+                <img src="images/brands/honda.jpg" class="img-fluid" alt="..." />
+              </div>
+
+              <div class="card-body">
+                <h5 class="card-title text-center">Honda</h5>
+              </div>
+            </div>
+          </div>
+          <!-- single-item -->
+          <div class="col">
+            <div class="card shadow-lg">
+              <div>
+                <img src="images/brands/bajaj.jpg" class="img-fluid" alt="..." />
+              </div>
+
+              <div class="card-body">
+                <h5 class="card-title text-center">Bajaj</h5>
+              </div>
+            </div>
+          </div>
+          <!-- single-item -->
+          <div class="col">
+            <div class="card shadow-lg">
+              <div>
+                <img src="images/brands/hero.jpg" class="img-fluid" alt="..." />
+              </div>
+
+              <div class="card-body">
+                <h5 class="card-title text-center">Hero</h5>
+              </div>
+            </div>
+          </div>
+          <!-- single-item -->
+          <div class="col">
+            <div class="card shadow-lg">
+              <div>
+                <img src="images/brands/lifan.jpg" class="img-fluid" alt="..." />
+              </div>
+
+              <div class="card-body">
+                <h5 class="card-title text-center">Lifan</h5>
+              </div>
+            </div>
+          </div>
+          <!-- single-item -->
+          <div class="col">
+            <div class="card shadow-lg">
+              <div>
+                <img src="images/brands/runner.jpg" class="img-fluid" alt="..." />
+              </div>
+
+              <div class="card-body">
+                <h5 class="card-title text-center">Runner</h5>
+              </div>
+            </div>
+          </div>
+          <!-- single-item -->
+          <div class="col">
+            <div class="card shadow-lg">
+              <div>
+                <img src="images/brands/suzuki-1.jpg" class="img-fluid" alt="..." />
+              </div>
+
+              <div class="card-body">
+                <h5 class="card-title text-center">Suzuki</h5>
+              </div>
+            </div>
+          </div>
+          <!-- single-item -->
+          <div class="col">
+            <div class="card shadow-lg">
+              <div>
+                <img src="images/brands/tvs.jpg" class="img-fluid" alt="..." />
+              </div>
+
+              <div class="card-body">
+                <h5 class="card-title text-center">Tvs</h5>
+              </div>
+            </div>
+          </div>
+          <!-- single-item -->
+          <div class="col">
+            <div class="card shadow-lg">
+              <div>
+                <img src="images/brands/yamaha-logo-1.jpg" class="img-fluid" alt="..." />
+              </div>
+
+              <div class="card-body">
+                <h5 class="card-title text-center">Yamaha</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- subscribe section -->
+      <section
+        class="container d-flex justify-content-center align-items-center my-5 bg-car sub-bg"
+        id="contact"
+      >
+        <div class="my-3">
+          <h1 class="title-color fs-2 fw-bold text-uppercase">Contact With Us</h1>
+          <p class="form-text">Get updates on sales, specials and more</p>
+          <input class="form-control" type="text" placeholder="Enter Your Name" />
+          <input class="form-control mt-3" type="email" placeholder="Enter Your Email" />
+          <textarea name="" id="" class="form-control mt-3"></textarea>
+          <button class="btn menu-btn mt-3">SUBMIT</button>
+        </div>
+      </section>
     </main>
+
+    <footer class="mb-5 text-center">
+      <small>©2021. Honda Cbr. All rights reserved. Sofia, Bulgaria.</small>
+    </footer>
 
     <!-- bootstrap js -->
     <script

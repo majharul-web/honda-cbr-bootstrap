@@ -20,6 +20,10 @@ body {
   color: #000000;
 }
 
+.sub-bg {
+  background: #e7f1ff;
+}
+
 .card-desc {
   font-size: 16px;
   line-height: 26px;
@@ -28,7 +32,7 @@ body {
 }
 
 /* header */
-header {
+.header-color {
   background: #264653;
 }
 .menu-btn {
