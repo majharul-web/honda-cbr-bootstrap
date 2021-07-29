@@ -13,7 +13,18 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.bg-orange {
+.text-orange {
+  color: #e76f51;
+}
+.title-color {
+  color: #000000;
+}
+
+.card-desc {
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.2px;
+  color: #6c6c6c;
 }
 
 /* header */
@@ -40,3 +51,20 @@ header {
   line-height: 24px;
   color: #e0e0e0;
 }
+
+/* fetured section */
+.fetured-p::after {
+  content: " ";
+  position: absolute;
+  width: 3rem;
+  border-bottom: 2px solid #e76f51;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.image-filter {
+  filter: grayscale(100%);
+}
+
+/* client section */
