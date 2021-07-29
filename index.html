@@ -32,7 +32,7 @@
     <!-- header -->
     <header class="header-color">
       <!-- nav -->
-      <nav class="navbar navbar-expand-md navbar-light header-color fixed-top">
+      <nav class="navbar navbar-expand-md navbar-light sticky-top">
         <div class="container">
           <button
             class="navbar-toggler"
@@ -54,7 +54,7 @@
                 <a class="nav-link text-light" aria-current="page" href="#shop">Shop</a>
               </li>
               <li class="nav-item mx-3">
-                <a class="nav-link text-light" aria-current="page" href="#">News</a>
+                <a class="nav-link text-light" aria-current="page" href="#news">News</a>
               </li>
               <li class="nav-item mx-3">
                 <a class="nav-link text-light" aria-current="page" href="#contact">Contact</a>
@@ -100,7 +100,7 @@
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Honda cbr</h5>
+                      <h5 class="modal-title title-color" id="exampleModalLabel">Honda cbr</h5>
                       <button
                         type="button"
                         class="btn-close"
@@ -108,8 +108,8 @@
                         aria-label="Close"
                       ></button>
                     </div>
-                    <div class="modal-body">
-                      <p>
+                    <div class="modal-body header-color">
+                      <p class="text-light">
                         Honda CB Hornet 160R ABS is a product of Honda. Its price is Tk 255,000.00. Honda is
                         the brand of Japan. Hornet ABS is Assemble/Made in Bangladesh. This bike is powered by
                         162.7 cc engine which generates Maximum power 14.9 bhp @ 8500 rpm and its maximum
@@ -136,20 +136,77 @@
 
     <main>
       <!-- fetured section -->
-      <section class="container pt-4" id="shop">
+      <section class="container mt-5" id="shop">
         <div class="text-center">
           <h2 class="title-color fs-3 fw-bold">Fetured Bikes 2021</h2>
           <p class="text-orange fetured-p position-relative">Best bike collection</p>
         </div>
         <div class="row d-flex justify-content-between mt-5">
-          <div class="col-lg-3 col-12">
+          <div class="col-lg-3 col-md-5 col-12">
             <img class="img-fluid image-filter" src="images/feature-bike.jpg" alt="" />
           </div>
-          <div class="col-lg-3 col-12 mt-5 mt-lg-0">
+          <div class="col-lg-3 col-md-5 col-12 mt-5 mt-lg-0">
             <img class="img-fluid" src="images/feature-bike.jpg" alt="" />
           </div>
-          <div class="col-lg-3 col-12 mt-5 mt-lg-0">
+          <div class="col-lg-3 col-md-5 col-12 mt-5 mt-lg-0">
             <img class="img-fluid image-filter" src="images/feature-bike.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!-- news section -->
+      <section class="container mt-5" id="news">
+        <h2 class="title-color fs-3 fw-bold text-center">Latest News</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-4">
+          <!-- single item -->
+          <div class="col">
+            <div class="card rounded-3">
+              <div class="p-3 rounded-3">
+                <img src="images/bike-1.png" class="img-fluid rounded-3" alt="..." />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title fs-3 fw-bold">Ducati XDIAVEL S-73</h5>
+                <p class="card-text card-desc">
+                  This is a longer card with supporting text below as a natural lead-in to additional content.
+                  This content is a little bit longer.
+                </p>
+                <button class="btn menu-btn btn-lg title-color" type="submit">Read More</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- single item -->
+          <div class="col">
+            <div class="card rounded-3">
+              <div class="p-3 rounded-3">
+                <img src="images/bike-2.png" class="img-fluid rounded-3" alt="..." />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title fs-3 fw-bold">Motorcycle & Scooter</h5>
+                <p class="card-text card-desc">
+                  This is a longer card with supporting text below as a natural lead-in to additional content.
+                  This content is a little bit longer.
+                </p>
+                <button class="btn menu-btn btn-lg title-color" type="submit">Read More</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- single item -->
+          <div class="col">
+            <div class="card rounded-3">
+              <div class="p-3 rounded-3">
+                <img src="images/bike-3.png" class="img-fluid rounded-3" alt="..." />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title fs-3 fw-bold">2021 Honda CBR500R</h5>
+                <p class="card-text card-desc">
+                  This is a longer card with supporting text below as a natural lead-in to additional content.
+                  This content is a little bit longer.
+                </p>
+                <button class="btn menu-btn btn-lg title-color" type="submit">Read More</button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -160,7 +217,7 @@
           <span class="title-color">Happy</span>
           <span class="text-orange"> Clients says</span>
         </h2>
-        <div class="row row-cols-1 row-cols-lg-3 g-4 mt-5">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-5">
           <!-- single item -->
           <div class="col">
             <div class="card">
@@ -268,118 +325,91 @@
 
           <!-- faq -->
           <div class="col-lg-6 col-12 mt-5 mt-lg-0">
-            <div class="">
-              <div class="accordion" id="accordionFlushExample">
-                <!-- single item -->
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                    <button
-                      class="accordion-button"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#panelsStayOpen-collapseOne"
-                      aria-expanded="true"
-                      aria-controls="panelsStayOpen-collapseOne"
-                    >
-                      What are the most important things I should know about riding a bike?
-                    </button>
-                  </h2>
-                  <div
-                    id="panelsStayOpen-collapseOne"
-                    class="accordion-collapse collapse show"
-                    aria-labelledby="panelsStayOpen-headingOne"
+            <!-- single item -->
+            <div class="accordion" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseOne"
+                    aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseOne"
                   >
-                    <div class="accordion-body">
-                      Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and
-                      laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will
-                      help you be a more focused and legally compliant bike rider.
-                    </div>
+                    What are the most important things I should know about riding a bike?
+                  </button>
+                </h2>
+                <div
+                  id="panelsStayOpen-collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="panelsStayOpen-headingOne"
+                >
+                  <div class="accordion-body">
+                    Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and
+                    laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will
+                    help you be a more focused and legally compliant bike rider.
                   </div>
                 </div>
+              </div>
+            </div>
 
-                <!-- single item -->
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-headingTwo">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#flush-collapseTwo"
-                      aria-expanded="false"
-                      aria-controls="flush-collapseTwo"
-                    >
-                      How long we can keep bike unused?
-                    </button>
-                  </h2>
-                  <div
-                    id="flush-collapseTwo"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="flush-headingTwo"
-                    data-bs-parent="#accordionFlushExample"
+            <!-- single item -->
+            <div class="accordion mt-3" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseTwo"
                   >
-                    <div class="accordion-body">
-                      Cars and bikes that have not been used for more than six months are likely to see
-                      degradation of the oils and greases in them. If the vehicle is used after that it will
-                      need to be serviced first, replacing oil and coolant if needed.
-                    </div>
+                    How long we can keep bike unused?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingTwo"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Cars and bikes that have not been used for more than six months are likely to see
+                    degradation of the oils and greases in them. If the vehicle is used after that it will
+                    need to be serviced first, replacing oil and coolant if needed.
                   </div>
                 </div>
+              </div>
+            </div>
 
-                <!-- single item -->
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-headingThree">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#flush-collapseThree"
-                      aria-expanded="false"
-                      aria-controls="flush-collapseThree"
-                    >
-                      How do you know when to replace your helmet?
-                    </button>
-                  </h2>
-                  <div
-                    id="flush-collapseThree"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="flush-headingThree"
-                    data-bs-parent="#accordionFlushExample"
+            <!-- single item -->
+            <div class="accordion mt-3" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseThree"
                   >
-                    <div class="accordion-body">
-                      If your helmet suffers any kind of impact, no matter how small, its protective qualities
-                      will be compromised. You should replace your helmet before riding again. Lastly, a
-                      riding helmet should fit snug on your head. If your helmet ever becomes too loose or too
-                      tight, it's time for a new one.
-                    </div>
-                  </div>
-                </div>
-
-                <!-- single item -->
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-headingThree">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#flush-collapseThree"
-                      aria-expanded="false"
-                      aria-controls="flush-collapseThree"
-                    >
-                      How can I save my bike battery when not in use?
-                    </button>
-                  </h2>
-                  <div
-                    id="flush-collapseThree"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="flush-headingThree"
-                    data-bs-parent="#accordionFlushExample"
-                  >
-                    <div class="accordion-body">
-                      The battery should be dry and grime free always. The battery should be regularly charged
-                      even during long periods of non-use. Discharging the battery in an idle state can harm
-                      the battery; therefore, keep charging the battery every month even if it is not used for
-                      a long time.
-                    </div>
+                    How do you know when to replace your helmet?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingThree"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    If your helmet suffers any kind of impact, no matter how small, its protective qualities
+                    will be compromised. You should replace your helmet before riding again. Lastly, a riding
+                    helmet should fit snug on your head. If your helmet ever becomes too loose or too tight,
+                    it's time for a new one.
                   </div>
                 </div>
               </div>
@@ -394,7 +424,7 @@
           <span class="title-color">Choose Bikes By </span>
           <span class="text-orange"> Brands</span>
         </h2>
-        <div class="row row-cols-1 row-cols-lg-4 g-4 mt-5">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mt-5">
           <!-- single-item -->
           <div class="col">
             <div class="card shadow-lg">
@@ -495,23 +525,34 @@
       </section>
 
       <!-- subscribe section -->
-      <section
-        class="container d-flex justify-content-center align-items-center my-5 bg-car sub-bg"
-        id="contact"
-      >
-        <div class="my-3">
-          <h1 class="title-color fs-2 fw-bold text-uppercase">Contact With Us</h1>
-          <p class="form-text">Get updates on sales, specials and more</p>
-          <input class="form-control" type="text" placeholder="Enter Your Name" />
-          <input class="form-control mt-3" type="email" placeholder="Enter Your Email" />
-          <textarea name="" id="" class="form-control mt-3"></textarea>
-          <button class="btn menu-btn mt-3">SUBMIT</button>
+
+      <section class="container sub-bg my-5" id="contact">
+        <!-- title -->
+        <h1 class="title-color fs-2 fw-bold text-uppercase text-center pt-4">Contact With Us</h1>
+
+        <div class="row py-3 d-flex align-items-center">
+          <!-- form -->
+          <div class="col-lg-6">
+            <div class="d-flex justify-content-center align-items-center">
+              <div>
+                <p class="form-text">Get updates on sales, specials and more</p>
+                <input class="form-control" type="text" placeholder="Enter Your Name" />
+                <input class="form-control mt-3" type="email" placeholder="Enter Your Email" />
+                <textarea name="" id="" class="form-control mt-3" placeholder="messege"></textarea>
+                <button class="btn menu-btn mt-3">SUBMIT</button>
+              </div>
+            </div>
+          </div>
+          <!-- image -->
+          <div class="col-lg-6 my-auto text-center mt-3 mt-lg-0">
+            <img class="img-fluid img-thumbnail w-75" src="images/map.png" alt="" />
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="mb-5 text-center">
-      <small>©2021. Honda Cbr. All rights reserved. Sofia, Bulgaria.</small>
+      <small>© 2020 bike. All rights reserved Dhaka, Bangladesh.</small>
     </footer>
 
     <!-- bootstrap js -->
